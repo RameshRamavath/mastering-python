@@ -8,6 +8,15 @@
         Elements can be accessed using Indexes
         It can have any number of items and they may be of different types (integer, float, string etc.)
         
+        How to create??
+        
+        items (elements) inside a square bracket [ ], separated by commas.
+        # empty list
+        my_list = []
+        
+        # list of integers
+        my_list = [1, 2, 3]
+        
         **Python List Methods**
         
         append() - Add an element to the end of the list
@@ -30,12 +39,28 @@
         Elements can be accessed using Indexes
         A tuple can have any number of items and they may be of different types (integer, float, list, string, etc.)
         
+        How to create??
+        ==========
+        
+        By placing all the items (elements) inside parentheses ()
+        
+        # Empty tuple
+        my_tuple = ()
+        print(my_tuple)  # Output: ()
+        
+        # Tuple having integers
+        my_tuple = (1, 2, 3)
+        print(my_tuple)  # Output: (1, 2, 3) 
+        
+        Methods
+        ==========
         count(x)  -	Returns the number of items x
         index(x)  -	Returns the index of the first item that is equal to x
 
    **3. Sets**
    
-       A set is an unordered collection of items. 
+       A set is an unordered collection of items.
+       Not indexed
        Every element is unique (no duplicates) and must be immutable. However, the set itself is mutable. We can add or remove items from it.
        
        How to create?
@@ -103,4 +128,35 @@
       
       default_order = "{}, {} and {}".format('John','Bill','Sean')
       print('\n--- Default Order ---')
+
+
+
+## **Collection Module in Python**
+
+  *Collections module comes with Specialized Collection data structures of above four data types*
+  
+  *Alternatives for built in data types*
+ 
+   #####1. Named Tuple
+   
+     Tuple with a named value for each element in the tuple
+     Aceesing elements is easy and no need to remember the index of an element
+     
+     from collections import namedtuple
+     
+     Employee = namedtuple('Employee',['name','age','place'])
+     emp = Employee('Ramesh',  26, 'Pune')
+     
+     Employee = (name:'Ramesh', age: 26, place: 'Pune')
+     
+     
+   #####1. OrderedDict
+   
+      Dictionary subclass which remembers the order in which the entries were done
       
+      dict = OrderedDict()
+      dict['name'] = 'Ramesh'
+      dict['age'] = 26
+      dict['place'] = 'Pune'
+      
+      dict.get('name')

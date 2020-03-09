@@ -29,3 +29,10 @@ if __name__ == '__main__':
     my_string2 = "love"
     print getFirstUniqueChar(my_string)
     print getFirstUniqueChar(my_string2)
+
+    dict = OrderedDict()
+    dict['name'] = 'Ramesh'
+    dict['age'] = 26
+    dict['place'] = 'Pune'
+
+    print dict.get('name')

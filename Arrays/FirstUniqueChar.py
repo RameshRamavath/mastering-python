@@ -1,6 +1,7 @@
 # given an string - print the index of first unique or non-repeating Character - if not found return -1
-from collections import OrderedDict
 
+
+from collections import OrderedDict
 
 def getFirstUniqueChar(input_str):
     res_dict = OrderedDict()
@@ -9,8 +10,7 @@ def getFirstUniqueChar(input_str):
         if res_dict.has_key(ch):
             res_dict.get(ch).append(index)
         else:
-            indexes = list\
-                ()
+            indexes = list()
             indexes.append(index)
             res_dict.setdefault(ch, indexes)
         index += 1
@@ -23,7 +23,9 @@ def getFirstUniqueChar(input_str):
     return -1
 
 
-my_string = "abbac"
-my_string2 = "love"
-print getFirstUniqueChar(my_string)
-print getFirstUniqueChar(my_string2)
+if __name__ == '__main__':
+
+    my_string = "abbac"
+    my_string2 = "love"
+    print getFirstUniqueChar(my_string)
+    print getFirstUniqueChar(my_string2)

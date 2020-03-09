@@ -29,8 +29,12 @@ def binarySearch(arr, num):
     return -1
 
 
-number = 10
-array = [1, 2, 5, 6, 7, 8]
-# call the method
-print search(array,number)
-print binarySearch(array,number)
+if __name__ == '__main__':
+    number1 = 10
+    number2 = 5
+    array = [1, 2, 5, 6, 7, 8]
+    # call the method
+    print search(array,number1)
+    print binarySearch(array,number1)
+    print search(array, number2)
+    print binarySearch(array, number2)

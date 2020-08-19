@@ -1,0 +1,2 @@
+Game of Thrones is a popular TV series based on George R.R. Martin’s A Song of Fire and Ice book series.
+With this dataset, you can explore its political landscape, characters, and battles

@@ -34,7 +34,7 @@ if __name__ == '__main__':
     number2 = 5
     array = [1, 2, 5, 6, 7, 8]
     # call the method
-    print search(array,number1)
-    print binarySearch(array,number1)
-    print search(array, number2)
-    print binarySearch(array, number2)
+    print(search(array, number1))
+    print(binarySearch(array, number1))
+    print(search(array, number2))
+    print(binarySearch(array, number2))

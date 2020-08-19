@@ -23,7 +23,7 @@ if __name__ == '__main__':
     emp2.emp_name = "mahesh"
     emp2.emp_age = 30
 
-    print "Employee 1 name - {} and Company - {}".format(emp1.emp_name, emp1.company)
-    print "Employee 2 name - {} and Company - {}".format(emp2.emp_name, emp2.company)
+    print( "Employee 1 name - {} and Company - {}".format(emp1.emp_name, emp1.company))
+    print( "Employee 2 name - {} and Company - {}".format(emp2.emp_name, emp2.company))
 
 

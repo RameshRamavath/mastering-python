@@ -20,5 +20,5 @@ def checkForSum(arr, req_sum):
 if __name__ == '__main__':
     arr = [1,3,6,2,8,5]
     # call our method
-    print checkForSum(arr, 11)  # True
-    print checkForSum(arr, 20)  # False
+    print(checkForSum(arr, 11))  # True
+    print(checkForSum(arr, 20))  # False

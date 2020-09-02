@@ -24,8 +24,8 @@ person_string = '''
 # convert this string to Python object (dict)  - use loads method
 
 data = json.loads(person_string)
-print( type(data))  # dict
-print( type(data['people']))  # list -- JSON array converted to Python list
+print(type(data))  # dict
+print(type(data['people']))  # list -- JSON array converted to Python list
 
 
 '''
